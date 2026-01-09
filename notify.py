@@ -562,7 +562,7 @@ def wecom_bot(title: str, content: str) -> None:
     if response["errcode"] == 0:
         print("企业微信机器人推送成功！")
     else:
-        print("企业微信机器人推送失败！")
+        print("企业微信机器人推送失败！"+response["errmsg"])
 
 
 def telegram_bot(title: str, content: str) -> None:
